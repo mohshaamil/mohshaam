@@ -3,7 +3,7 @@ trigger:
 
 pool:
   name: 'equisoft-testing'
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest2'
 
 steps:
 - task: Bash@3
