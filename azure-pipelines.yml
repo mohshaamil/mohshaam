@@ -2,8 +2,7 @@ trigger:
 - none
 
 pool:
-  vmImage: 'equisoft-testing'
-  agent.name: equisoft-testing
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: Bash@3
