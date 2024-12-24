@@ -1,14 +1,16 @@
 trigger:
-- main
+- none
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+  agent.name: equisoft-testing
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: Bash@3
+  displayName: "List Directory Contents"
+  inputs:
+    targetType: 'inline'
+    script: |
+      # List the contents of the current directory
+      echo "Listing contents of the current directory:"
+      ls -la
