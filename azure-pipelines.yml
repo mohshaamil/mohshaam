@@ -2,6 +2,7 @@ trigger:
 - none
 
 pool:
+  name: 'equisoft-testing'
   vmImage: 'ubuntu-latest'
 
 steps:
